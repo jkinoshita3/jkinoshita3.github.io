@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+
+  /* Blue gradient background */
+  background: linear-gradient(
+    180deg,
+    #0b1d33 0%,
+    #102a4d 40%,
+    #163b66 100%
+  );
+
+  color: #e9f1ff;
+}
+
+/* HEADER */
+header {
+  padding: 3rem 2rem 2rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+/* MAIN LAYOUT */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+/* ABOUT SECTION */
+#about p {
+  max-width: 700px;
+  font-size: 1rem;
+  opacity: 0.95;
+}
+
+/* PROJECT CARDS */
+.project {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 1.5rem;
+
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.25);
+
+  margin-bottom: 3rem;
+}
+
+/* VIDEO */
+.video video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* DESCRIPTION */
+.description h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.description p {
+  font-size: 0.95rem;
+  opacity: 0.95;
+}
+
+/* FOOTER */
+footer {
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+  .project {
+    grid-template-columns: 1fr;
+  }
+}
