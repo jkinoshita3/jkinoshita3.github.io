@@ -7,7 +7,6 @@ body {
   margin: 0;
   line-height: 1.6;
 
-  /* Blue gradient background */
   background: linear-gradient(
     180deg,
     #0b1d33 0%,
@@ -26,6 +25,7 @@ header {
 header h1 {
   margin: 0;
   font-size: 2.2rem;
+  text-align: center;
 }
 
 /* MAIN LAYOUT */
@@ -40,6 +40,7 @@ section {
 }
 
 h2 {
+  text-align: center;
   margin-bottom: 1rem;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -48,8 +49,10 @@ h2 {
 /* ABOUT SECTION */
 #about p {
   max-width: 700px;
+  margin: 0 auto;
   font-size: 1rem;
   opacity: 0.95;
+  text-align: center;
 }
 
 /* PROJECT CARDS */
@@ -65,8 +68,7 @@ h2 {
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
 
-  box-shadow:
-    0 10px 30px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 
   margin-bottom: 3rem;
 }
@@ -79,15 +81,22 @@ h2 {
 }
 
 /* DESCRIPTION */
+.description {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
 .description h3 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 500;
+  text-align: center;
 }
 
 .description p {
   font-size: 0.95rem;
   opacity: 0.95;
+  text-align: left;
 }
 
 /* FOOTER */
@@ -102,5 +111,9 @@ footer {
 @media (max-width: 800px) {
   .project {
     grid-template-columns: 1fr;
+  }
+
+  .description {
+    max-width: none;
   }
 }
